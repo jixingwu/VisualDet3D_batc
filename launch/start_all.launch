@@ -1,0 +1,3 @@
+<launch>
+    <node name="cube_convert" pkg="cube_convert" type="cube_convert_node" output="screen" />
+</launch>
