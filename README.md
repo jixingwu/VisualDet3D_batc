@@ -16,6 +16,6 @@ pip3 install -r requirement.txt
 ### 2. training
 Follow the [mono3d](https://github.com/Owen-Liuyuxuan/visualDet3D/blob/master/docs/mono3d.md) tutorials to train the network using KITTI object dataset.
 ### 3. testing our dataset
-3.1 Edit variance ```path.test_path``` in the ```config/config.py``` file.
+3.1 Edit data path ```path.test_path```  in the ```config/config.py``` file.
 
 3.2 The results are shown in ```workdirs/Mono3D/output/test/data``` folder.
