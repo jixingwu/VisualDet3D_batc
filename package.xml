@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>cube_convert</name>
+  <name>VisualDet3D_ros</name>
   <version>0.0.0</version>
   <description>The your_project_name package</description>
 

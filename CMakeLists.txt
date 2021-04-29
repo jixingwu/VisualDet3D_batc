@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(cube_convert)
+project(VisualDet3D_ros)
 
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++11")
@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
     nav_msgs
     cv_bridge
     image_transport
-        darknet_ros_msgs
+    darknet_ros_msgs
 )
 
 find_package(OpenCV REQUIRED)
@@ -23,7 +23,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   ${EIGEN3_INCLUDE_DIR}
 )
-
+#include_directories(SYSTEM "/foo/bar")
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 catkin_package(
@@ -40,7 +40,7 @@ catkin_package(
 )
 
 
-add_executable(cube_convert_node src/main.cpp)
-target_link_libraries(cube_convert_node ${catkin_LIBRARIES} ${OpenCV_LIBS})
+add_executable(VisualDet3D_ros_node src/main.cpp)
+target_link_libraries(VisualDet3D_ros_node ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 

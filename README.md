@@ -1,2 +1,2 @@
-# your_project
-your_project details
+# VisualDet3D_ros
+VisualDet3D_ros details
