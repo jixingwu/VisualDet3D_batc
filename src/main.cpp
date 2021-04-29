@@ -164,10 +164,11 @@ int main(int argc, char** argv){
         boundingBoxes.header = header;
         boundingBoxes.header.stamp = ros::Time::now();
         boundingBoxes.image_header = header;
+        if(!label_v.empty())
+            pub_bboxes.publish(boundingBoxes);
 
         pub_image.publish(imgRGBMsg);
         pub_depth.publish(imgDepMsg);
-        pub_bboxes.publish(boundingBoxes);
         pub_odom.publish(odometry);
 
         // TODO: pub cube topic message
